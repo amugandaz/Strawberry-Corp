@@ -1,0 +1,101 @@
+<html>
+    <head >
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="home.html">
+                <img src="assets/Full Logo.png" alt="3DIT by Strawberry" >
+            </a>
+            <a href="features.html"class="button">FEATURES</a>
+            <a href="pricing.html"class="button active">PRICING</a>
+            <a href="join.html"class="button">JOIN</a>
+            <a href="team.html"class="button">TEAM</a>
+        </header>
+        <div class="betterbody">
+            <h1>Printing price estimate</h1>
+            <p>Printing with carbon costs twice as much as printing with plastic.</p>
+            <label for="material">Printing material:</label>
+            <input list="materials" id="material" name="material"/><br><br>
+            <datalist id="materials">
+                <option value="Carbon">
+                <option value="Plastic">
+            </datalist>
+
+            <p>Printing dimensions:</p>
+            <form action="/action_page.php">
+                <label for="width">Width (cm):</label>
+                <input type="number" id="width" name="width"><br><br>
+                <label for="lenght">Lenght (cm):</label>
+                <input type="number" id="lenght" name="lenght"><br><br>
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height"><br>
+            </form>
+
+            <script>
+                function myPrice(){
+                    var width=document.getElementById("width").value;
+                    var lenght=document.getElementById("lenght").value;
+                    var height=document.getElementById("height").value;
+                    var material=document.getElementById("material").value;
+                    var size=(width*lenght*height);
+                    var price="";
+
+                    if(width !=0 && lenght != 0 && height != 0){                         
+                        if(width<=50){
+                            if(lenght<=50){
+                                 if(height<=50){
+                                     if(material=="Carbon"){
+                                        price=Math.round(size*0.02);
+                                        if(price<5){
+                                            price="5$"
+                                        }else{
+                                            price=price+"$"
+                                        }
+                                     }else if(material=="Plastic"){
+                                        price=Math.round(size*0.01);
+                                        if(price<5){
+                                            price="5$"
+                                        }else{
+                                            price=price+"$"
+                                        }
+                                     }else{
+                                        price="Please select a material";
+                                     }
+                                }else{
+                                    price="Print height unsupported";
+                                }
+                            }else{
+                                price="Print lenght unsupported";
+                            }
+                        }else{
+                            price="Print width unsupported";
+                        }
+                    }else{
+                        price="Please enter all dimensions first";
+                    }
+                document.getElementById("showPrice").innerHTML = price;
+                }
+
+            </script>
+            <button type="button" onclick="myPrice()">Calculate</button>
+            <p>Price estimate before tax and shipping:</p>
+            <p id="showPrice"> </p>
+            <a class="single-button" href="assets/unicorn.png">BUY</a>
+        </div>
+        <footer>
+            <a href="mailto:3ditstrawberry@gmail.com" class="info">Contact Us</a>
+            <a href="https://github.com/Tagdragonoir/Strawberry-Corp" class="info">About 3DIT</a>
+            <hr>
+            <a href="home.html">
+                <img src="assets/Full Logo.png" alt="3DIT by Strawberry" height=64>
+            <a href="https://www.instagram.com/3dit_strawberry/">
+                <img src="assets/Instagram logo.png" alt="Instagram" width=32 height=32 class="button">
+            <a href="https://twitter.com/corp_strawberry">
+                <img src="assets/Twitter logo.png" alt="Twitter" width=32 height=32 class="button">
+            <a href="https://ca.indeed.com/cmp/Strawberry-Corporation">
+                <img src="assets/linked In logo.png" alt="Linked In" width=32 height=32 class="button">
+            </a>
+        </footer>
+    </body>
+</html>

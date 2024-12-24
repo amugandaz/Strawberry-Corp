@@ -1,0 +1,38 @@
+Overall Look and Feel of 3DIT
+=============================
+
+The overall look and feel should be modern with minimalist flat design. The pages will contain one focus point that could be 3D
+with the rest being flat. The website will be very straight forward and easy to use.
+
+Colours
+=======
+Our colors are simple and give a sensation of perfectionism and professionalism. Our colours are modern and clean.
+These are our color swatches:
+
+- #B0228C (Fandango)
+- E56B70 (Candy Pink)
+- #E9E3E6 (Platinum)
+- #B2B2B2 (Silver Chalice)
+- #000000 (Black)
+- #FFFFFF (White)
+
+Iconography
+===========
+Our icons will have a simple 2D theme with flat colors to keep the viewers focused on the website's features
+
+Typography
+==========
+We will be using the following fonts:
+- Corbel (Headers and descriptive names)
+- Tw Cen MT (Titles)
+- Sans-serif (Footer and general text)
+- Futura-Bold (Logo)
+
+Links
+=====
+Links will be buttons, that are either purple or will turn purple on click
+
+Buttons
+=======
+Buttons will be flat and will be Fandango (purple). The header buttons' text will turn bold when hovered over, and it will be in a Fandango
+box if selected. Fandango buttons will change in shape when hovered over.

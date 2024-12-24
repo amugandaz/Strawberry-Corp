@@ -1,0 +1,37 @@
+h1 { 
+    text-align: center;
+} 
+
+.mainheader  {
+    color: #E56B70;
+    text-align: center;
+}
+
+div.logobox1 {
+    width: 235px;
+    height: 235px;
+    padding: 15px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.strawberrylogo {
+    width: 235px;
+    display: block;
+    margin: auto;  
+}
+
+.strawberrydesc, .slogan {
+    text-align: center;
+}
+
+.DITlogo, .printer {
+    display: block;
+    margin: auto;
+    width: 500px; 
+    height: 300px;
+}
+.pfp {
+    width : 150px;
+    height: 150px;
+    object-fit: cover;
+}
